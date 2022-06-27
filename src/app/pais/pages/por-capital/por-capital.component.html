@@ -1,7 +1,9 @@
-<h2>Por Capital</h2>
-<hr>
+<div  class=" animate__animated animate__bounceInRight">
+    <h2>Por Capital</h2>
+    <hr>
+</div>
 
-<div class="row">
+<div class="row animate__animated animate__fadeInUp animate animate__delay-500ms">
     <div class="col">
         <app-pais-input
             (onEnter)="buscar( $event )"
@@ -10,11 +12,11 @@
     </div>
 </div>
 
-
 <hr>
 
+
 <div *ngIf="hayError"
-     class="alert alert-danger">
+    class="alert alert-danger">
     No se encontro nada con el termino {{termino}}
 </div>
 

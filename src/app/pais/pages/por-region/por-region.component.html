@@ -1,9 +1,12 @@
-<h3>Buscar por region <small>{{ regionActiva }}</small></h3>
+<div class=" animate__animated animate__bounceInRight">
+    <h3>Buscar por region <small>{{ regionActiva }}</small></h3>
 <hr>
 
-<h5>Selecciones la region</h5>
+</div>
 
-<div class="row">
+<h5 class="animate__animated animate__fadeInUp animate animate__delay-1s">Selecciones la region</h5>
+
+<div class="row animate__animated animate__fadeIn animate__delay-2s">
     <div class="col">
         <button *ngFor="let region of regiones"
             [class]="getclasesCss(region)"
